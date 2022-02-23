@@ -10,6 +10,12 @@ class SpellsService {
         ProxyState.apiSpells = res.data.results
     }
 
+    async getActiveSpell(index) {
+        const res = await dndApi.get(index)
+        console.log(res.data);
+        // ProxyState.apiSpells = new Spell(res.data)
+    }
+
 }
 
 export const spellsService = new SpellsService()

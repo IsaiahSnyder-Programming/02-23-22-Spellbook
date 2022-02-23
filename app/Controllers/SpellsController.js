@@ -24,6 +24,10 @@ export class SpellsController {
     }
 
     async getActiveSpell(index) {
-        console.log(index);
+        try {
+            await spellsService.getActiveSpell(index)
+        } catch (error) {
+            console.error(error);            
+        }
     }
 }
