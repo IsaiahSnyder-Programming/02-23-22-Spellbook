@@ -7,7 +7,7 @@ class SpellsService {
     async getSpells() {
         const res = await dndApi.get()
         console.log(res.data);
-        ProxyState.apiSpells = new Spell(res.data)
+        ProxyState.apiSpells = res.data.results
     }
 
 }
