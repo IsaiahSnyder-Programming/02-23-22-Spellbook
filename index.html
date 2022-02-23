@@ -51,24 +51,43 @@
           <!-- End Of Template -->
         </div>
 
-        <div class="col-4">
+
+
+        <div class="col-5">
           <div class="row" id="active-spell">
 
             <!-- NOTE Active Spell Template -->
-            <div class="col-12 bg-light shadow">
+            <!-- <div class="col-12 bg-light shadow">
               <div class="text-center">
                 <h2>this.name</h2>
                 <h4>this.duration | this.level | this.range</h4>
                 <p class="text-start">this.desc</p>
-                <div class="d-flex justify-content-between align-items-baseline">
-    
-                </div>
+                <div class="d-flex justify-content-between align-items-baseline"></div>
               </div>
-            </div>
+            </div> -->
             <!-- End Of Template -->
 
           </div>
         </div>
+
+
+
+        <div class="col-4">
+          <div class="row" id="prepared-spell">
+
+            <!-- NOTE Active Spell Template -->
+            <!-- <div class="rounded p-2">
+              <b class="text-center w-100"></b><br/>
+              <input type="checkbox" ${this.prepared ? "checked" : ""} onclick="app.spellsController.prepareSpell('${this.id}')">
+              <button class="btn selectable" onclick="app.spellsController.setActiveSpell('${this.id}')"> See Details </button>
+            </div> -->
+            <!-- End Of Template -->
+
+          </div>
+        </div>
+
+
+
       </div>
     </div>
   </main>
