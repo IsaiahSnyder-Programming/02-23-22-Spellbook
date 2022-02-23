@@ -12,7 +12,16 @@ export class Spell {
     
     get Template() {
         return `
-        <li class="selectable">${this.name}</li>
+        <div class="col-12 bg-light shadow">
+            <div class="text-center">
+                <h2>${this.name}</h2>
+                <h4>${this.duration} | Level: ${this.level} | ${this.range}</h4>
+                <p class="text-start">${this.desc}</p>
+                <div class="d-flex justify-content-between align-items-baseline">
+
+                </div>
+            </div>
+        </div>
         `
     }
 }

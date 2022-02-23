@@ -13,7 +13,7 @@ class SpellsService {
     async getActiveSpell(index) {
         const res = await dndApi.get(index)
         console.log(res.data);
-        // ProxyState.apiSpells = new Spell(res.data)
+        ProxyState.activeSpell = new Spell(res.data)
     }
 
 }

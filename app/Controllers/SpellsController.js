@@ -16,10 +16,18 @@ function _drawSpellsList() {
     document.getElementById('spell-list').innerHTML = template
 }
 
+function _drawActiveSpell() {
+    let spell = ProxyState.activeSpell
+    if(spell.name) {
+        document.getElementById('active-spell').innerHTML = ProxyState.activeSpell.Template
+    }
+}
+
 export class SpellsController {
     constructor() {
         console.log('[SpellsController] loaded');
         ProxyState.on('apiSpells', _drawSpellsList)
+        ProxyState.on('activeSpell', _drawActiveSpell)
         _getSpells()
     }
 

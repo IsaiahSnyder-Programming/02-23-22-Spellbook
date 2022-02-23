@@ -6,6 +6,8 @@ class AppState extends EventEmitter {
 
   /** @type {import('./Models/Spell').Spell[]} */
   mySpells = []
+
+  activeSpell = {}
 }
 
 export const ProxyState = new Proxy(new AppState(), {
